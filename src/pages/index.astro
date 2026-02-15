@@ -13,61 +13,155 @@
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Cormorant+Garamond:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
 	</head>
 	<body>
-		<main class="hero-page">
-			<div class="sky" aria-hidden="true">
-				<div class="mist"></div>
-				<div class="glow g1"></div>
-				<div class="glow g2"></div>
-				<div class="glow g3"></div>
-				<div class="fireflies"></div>
-				<svg class="ranger-compass" viewBox="0 0 200 200">
-					<circle class="compass-ring outer" cx="100" cy="100" r="82" />
-					<circle class="compass-ring inner" cx="100" cy="100" r="58" />
-					<path class="compass-needle" d="M100 28 L113 100 L100 172 L87 100 Z" />
-					<path class="compass-needle dim" d="M28 100 L100 87 L172 100 L100 113 Z" />
-				</svg>
-				<svg class="paw-constellation" viewBox="0 0 140 140">
-					<circle cx="70" cy="85" r="14" />
-					<circle cx="48" cy="53" r="8" />
-					<circle cx="66" cy="44" r="8" />
-					<circle cx="86" cy="46" r="8" />
-					<circle cx="103" cy="58" r="8" />
-				</svg>
-				<div class="orbits">
-					<span class="ring r1"></span>
-					<span class="ring r2"></span>
-					<span class="ring r3"></span>
-					<span class="core"></span>
+		<main class="manuscript-page">
+			<!-- Ornate border frame -->
+			<svg class="border-frame" viewBox="0 0 100 100" preserveAspectRatio="none">
+				<path class="border-line" d="M2,2 L98,2 L98,98 L2,98 Z" />
+				<path class="border-line inner" d="M4,4 L96,4 L96,96 L4,96 Z" />
+			</svg>
+
+			<!-- Corner ornaments with Celtic knots -->
+			<svg class="corner-ornament top-left" viewBox="0 0 100 100">
+				<path class="knot" d="M10,50 Q10,10 50,10 Q90,10 90,50 M50,10 L50,90 M10,50 Q10,90 50,90 Q90,90 90,50" />
+				<circle class="knot-dot" cx="50" cy="50" r="4" />
+			</svg>
+			<svg class="corner-ornament top-right" viewBox="0 0 100 100">
+				<path class="knot" d="M10,50 Q10,10 50,10 Q90,10 90,50 M50,10 L50,90 M10,50 Q10,90 50,90 Q90,90 90,50" />
+				<circle class="knot-dot" cx="50" cy="50" r="4" />
+			</svg>
+			<svg class="corner-ornament bottom-left" viewBox="0 0 100 100">
+				<path class="knot" d="M10,50 Q10,10 50,10 Q90,10 90,50 M50,10 L50,90 M10,50 Q10,90 50,90 Q90,90 90,50" />
+				<circle class="knot-dot" cx="50" cy="50" r="4" />
+			</svg>
+			<svg class="corner-ornament bottom-right" viewBox="0 0 100 100">
+				<path class="knot" d="M10,50 Q10,10 50,10 Q90,10 90,50 M50,10 L50,90 M10,50 Q10,90 50,90 Q90,90 90,50" />
+				<circle class="knot-dot" cx="50" cy="50" r="4" />
+			</svg>
+
+			<!-- Multi-panel content grid -->
+			<div class="manuscript-grid">
+				<!-- Header panel with title -->
+				<div class="panel header-panel">
+					<svg class="panel-decoration" viewBox="0 0 300 40">
+						<path class="flourish" d="M10,20 Q50,10 150,20 Q250,30 290,20" />
+						<circle class="dot" cx="150" cy="20" r="3" />
+						<circle class="dot" cx="80" cy="18" r="2" />
+						<circle class="dot" cx="220" cy="22" r="2" />
+					</svg>
+					<h1 class="manuscript-title">
+						<span class="title-line gaelic">Domhan an Fiosracht</span>
+						<span class="title-line english">World of Curiosity</span>
+					</h1>
+					<svg class="panel-decoration bottom" viewBox="0 0 300 40">
+						<path class="flourish" d="M10,20 Q50,30 150,20 Q250,10 290,20" />
+					</svg>
 				</div>
-				<div class="orbits orbits-secondary">
-					<span class="ring r1"></span>
-					<span class="ring r2"></span>
-					<span class="ring r3"></span>
-					<span class="core"></span>
+
+				<!-- Left panel: Compass and cartographic elements -->
+				<div class="panel compass-panel">
+					<svg class="cartographer-compass" viewBox="0 0 200 200">
+						<circle class="compass-circle outer" cx="100" cy="100" r="90" />
+						<circle class="compass-circle mid" cx="100" cy="100" r="70" />
+						<circle class="compass-circle inner" cx="100" cy="100" r="50" />
+						<g class="compass-directions">
+							<text x="100" y="25" class="direction-label">N</text>
+							<text x="175" y="105" class="direction-label">E</text>
+							<text x="100" y="185" class="direction-label">S</text>
+							<text x="25" y="105" class="direction-label">W</text>
+						</g>
+						<path class="compass-rose" d="M100,40 L110,95 L100,100 L90,95 Z" />
+						<path class="compass-rose" d="M160,100 L105,110 L100,100 L105,90 Z" />
+						<path class="compass-rose" d="M100,160 L110,105 L100,100 L90,105 Z" />
+						<path class="compass-rose" d="M40,100 L95,110 L100,100 L95,90 Z" />
+						<circle class="compass-center" cx="100" cy="100" r="8" />
+					</svg>
+					<p class="panel-label">Carta Marina</p>
 				</div>
-				<svg class="forest-mid" viewBox="0 0 1200 260" preserveAspectRatio="none">
-					<path class="ridge-back" d="M0,260 L0,220 L70,190 L136,214 L204,176 L272,222 L336,186 L404,228 L468,190 L536,236 L604,178 L668,232 L736,184 L800,228 L866,182 L932,238 L996,190 L1062,230 L1128,188 L1200,218 L1200,260 Z" />
-					<path class="ridge-front" d="M0,260 L0,236 L64,212 L126,236 L188,198 L252,240 L314,206 L378,246 L442,204 L508,250 L572,199 L634,248 L696,206 L760,250 L824,204 L890,248 L954,206 L1018,248 L1082,208 L1146,242 L1200,226 L1200,260 Z" />
-				</svg>
-				<svg class="tree-line" viewBox="0 0 1200 220" preserveAspectRatio="none">
-					<path class="trees-back" d="M0,220 L0,164 L60,176 L95,140 L138,168 L186,132 L228,175 L260,150 L300,184 L348,142 L396,177 L436,132 L485,182 L526,149 L572,186 L615,137 L662,174 L705,128 L748,181 L793,146 L836,186 L884,134 L928,176 L972,144 L1016,186 L1064,138 L1106,174 L1150,148 L1200,176 L1200,220 Z" />
-					<path class="trees-front" d="M0,220 L0,188 L42,168 L78,192 L128,154 L170,192 L220,152 L266,196 L320,158 L362,194 L410,148 L458,198 L508,158 L552,196 L602,150 L648,194 L700,148 L742,198 L790,156 L840,197 L886,152 L934,192 L978,154 L1022,198 L1068,160 L1116,196 L1168,162 L1200,174 L1200,220 Z" />
-				</svg>
-				<svg class="sigils" viewBox="0 0 1200 200" preserveAspectRatio="none">
-					<path class="line l1" d="M0,130 Q180,70 380,120 T760,110 T1200,130" />
-					<path class="line l2" d="M0,150 Q220,190 420,140 T800,150 T1200,135" />
-				</svg>
+
+				<!-- Center panel: Main text block -->
+				<div class="panel text-panel">
+					<div class="illuminated-letter">D</div>
+					<p class="manuscript-text">
+						Here lies a cabinet of curiosities, a cartographer's study where ancient knowledge meets modern wonder. Within these digital vellum pages, one discovers experiments in language, thought, and the liminal spaces between human and machine cognition.
+					</p>
+					<div class="text-divider">
+						<svg viewBox="0 0 200 20">
+							<path class="divider-line" d="M10,10 L90,10 M110,10 L190,10" />
+							<circle class="divider-dot" cx="100" cy="10" r="4" />
+						</svg>
+					</div>
+					<p class="manuscript-text secondary">
+						Each artifact catalogued with care, each specimen preserved in amber notation, awaiting the curious mind to unlock its secrets.
+					</p>
+				</div>
+
+				<!-- Right panel: Celtic knotwork -->
+				<div class="panel knotwork-panel">
+					<svg class="celtic-knot" viewBox="0 0 160 160">
+						<path class="knot-path" d="M30,80 Q30,30 80,30 Q130,30 130,80 Q130,130 80,130 Q30,130 30,80 Z" />
+						<path class="knot-path" d="M50,80 Q50,50 80,50 Q110,50 110,80 Q110,110 80,110 Q50,110 50,80 Z" />
+						<path class="knot-weave" d="M30,60 L130,100 M30,100 L130,60" />
+						<circle class="knot-node" cx="80" cy="80" r="6" />
+						<circle class="knot-node" cx="55" cy="70" r="4" />
+						<circle class="knot-node" cx="105" cy="90" r="4" />
+						<circle class="knot-node" cx="55" cy="90" r="4" />
+						<circle class="knot-node" cx="105" cy="70" r="4" />
+					</svg>
+					<p class="panel-label">Snaidhm Ceilteach</p>
+				</div>
+
+				<!-- Bottom left: Specimen illustration -->
+				<div class="panel specimen-panel">
+					<svg class="specimen-drawing" viewBox="0 0 180 140">
+						<g class="botanical">
+							<path class="stem" d="M90,120 Q85,80 90,40" />
+							<path class="leaf" d="M90,70 Q70,75 65,85 Q70,95 90,90" />
+							<path class="leaf" d="M90,60 Q110,65 115,75 Q110,85 90,80" />
+							<path class="leaf" d="M90,50 Q70,55 65,65 Q70,75 90,70" />
+							<circle class="flower" cx="90" cy="35" r="8" />
+							<circle class="flower-center" cx="90" cy="35" r="3" />
+						</g>
+					</svg>
+					<p class="specimen-label">Specimen XLII</p>
+					<p class="specimen-note">Flora Digitalis</p>
+				</div>
+
+				<!-- Bottom center: Archive link -->
+				<div class="panel archive-panel">
+					<svg class="archive-seal" viewBox="0 0 120 120">
+						<circle class="seal-ring" cx="60" cy="60" r="50" />
+						<circle class="seal-ring inner" cx="60" cy="60" r="40" />
+						<path class="seal-mark" d="M40,60 L60,40 L80,60 L60,80 Z" />
+						<text x="60" y="100" class="seal-text">MDCCXC</text>
+					</svg>
+					<a class="archive-link" href="https://github.com/domhan-an-fiosracht" target="_blank" rel="noopener">
+						<span class="link-text">Enter the Archive</span>
+						<svg class="link-arrow" viewBox="0 0 20 20">
+							<path d="M5,10 L15,10 M12,7 L15,10 L12,13" />
+						</svg>
+					</a>
+				</div>
+
+				<!-- Bottom right: Map fragment -->
+				<div class="panel map-panel">
+					<svg class="map-fragment" viewBox="0 0 160 140">
+						<path class="coastline" d="M10,70 Q30,50 50,60 T90,80 T130,70 T150,90" />
+						<path class="coastline" d="M10,90 Q35,110 60,95 T100,110 T140,100 T150,110" />
+						<circle class="landmark" cx="70" cy="75" r="3" />
+						<circle class="landmark" cx="110" cy="95" r="3" />
+						<line class="latitude" x1="10" y1="60" x2="150" y2="60" />
+						<line class="latitude" x1="10" y1="100" x2="150" y2="100" />
+						<text class="map-label" x="75" y="40">Terra Incognita</text>
+					</svg>
+					<p class="panel-label">Mappa Mundi</p>
+				</div>
 			</div>
 
-			<header class="hero-copy">
-				<p class="eyebrow">Domhan an Fiosracht</p>
-				<h1>World of Curiosity</h1>
-				<p class="lead">A ranger's watch between ancient pines.</p>
-				<a class="hero-link" href="https://github.com/domhan-an-fiosracht" target="_blank" rel="noopener">Enter the Archive</a>
-			</header>
+			<!-- Paper texture overlay -->
+			<div class="paper-texture" aria-hidden="true"></div>
 		</main>
 
 		<style>
@@ -78,12 +172,13 @@
 			}
 
 			:root {
-				--bg: #050b07;
-				--text: #e6f3e7;
-				--muted: #a6c0aa;
-				--accent: #cfb26a;
-				--accent-2: #3d754f;
-				--line: rgba(114, 168, 129, 0.26);
+				--parchment: #f4ebe1;
+				--ink-dark: #2b1810;
+				--ink-medium: #4a3426;
+				--ink-light: #6d5647;
+				--sepia: #b8966d;
+				--gold: #c9a961;
+				--border-color: #8b6f47;
 			}
 
 			html,
@@ -91,332 +186,559 @@
 				margin: 0;
 				padding: 0;
 				height: 100%;
-				background:
-					radial-gradient(circle at 20% 14%, rgba(207, 178, 106, 0.09), transparent 42%),
-					radial-gradient(circle at 85% 15%, rgba(61, 117, 79, 0.2), transparent 45%),
-					linear-gradient(180deg, #08130d 0%, #050b07 55%, #040804 100%),
-					var(--bg);
-				color: var(--text);
-				font-family: 'Cormorant Garamond', Georgia, serif;
-				overflow: hidden;
+				background: var(--parchment);
+				color: var(--ink-dark);
+				font-family: 'EB Garamond', 'Cormorant Garamond', Georgia, serif;
+				overflow-x: hidden;
 			}
 
 			a {
 				color: inherit;
 			}
 
-			.hero-page {
+			.manuscript-page {
 				position: relative;
-				height: 100%;
-				width: 100%;
-				display: grid;
-				place-items: center;
+				min-height: 100vh;
+				padding: 2rem 1.5rem;
+				background:
+					radial-gradient(circle at 20% 30%, rgba(139, 111, 71, 0.04), transparent 40%),
+					radial-gradient(circle at 80% 70%, rgba(201, 169, 97, 0.06), transparent 45%),
+					linear-gradient(135deg, #f4ebe1 0%, #ede4d8 50%, #f4ebe1 100%);
 			}
 
-			.sky {
-				position: absolute;
+			/* Ornate border frame */
+			.border-frame {
+				position: fixed;
 				inset: 0;
+				width: 100%;
+				height: 100%;
+				pointer-events: none;
+				z-index: 10;
+			}
+
+			.border-line {
+				fill: none;
+				stroke: var(--border-color);
+				stroke-width: 0.3;
+			}
+
+			.border-line.inner {
+				stroke-width: 0.15;
+				stroke-dasharray: 4 2;
+			}
+
+			/* Corner ornaments */
+			.corner-ornament {
+				position: fixed;
+				width: 80px;
+				height: 80px;
+				pointer-events: none;
+				z-index: 11;
+			}
+
+			.top-left {
+				top: 1.5rem;
+				left: 1.5rem;
+			}
+
+			.top-right {
+				top: 1.5rem;
+				right: 1.5rem;
+				transform: rotate(90deg);
+			}
+
+			.bottom-left {
+				bottom: 1.5rem;
+				left: 1.5rem;
+				transform: rotate(-90deg);
+			}
+
+			.bottom-right {
+				bottom: 1.5rem;
+				right: 1.5rem;
+				transform: rotate(180deg);
+			}
+
+			.knot {
+				fill: none;
+				stroke: var(--gold);
+				stroke-width: 1.5;
+				stroke-linecap: round;
+			}
+
+			.knot-dot {
+				fill: var(--gold);
+			}
+
+			/* Paper texture */
+			.paper-texture {
+				position: fixed;
+				inset: 0;
+				pointer-events: none;
+				background-image: 
+					repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(139, 111, 71, 0.02) 2px, rgba(139, 111, 71, 0.02) 4px),
+					repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(139, 111, 71, 0.02) 2px, rgba(139, 111, 71, 0.02) 4px);
+				opacity: 0.5;
+				z-index: 1;
+			}
+
+			/* Multi-panel grid */
+			.manuscript-grid {
+				position: relative;
+				z-index: 2;
+				max-width: 1200px;
+				margin: 0 auto;
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 2rem 1.5rem;
+				padding: 1rem;
+			}
+
+			/* Panel styles */
+			.panel {
+				background: rgba(255, 255, 255, 0.4);
+				border: 2px solid var(--sepia);
+				padding: 1.5rem;
+				box-shadow: 
+					0 2px 8px rgba(43, 24, 16, 0.1),
+					inset 0 0 20px rgba(255, 255, 255, 0.5);
+				position: relative;
+			}
+
+			.panel::before {
+				content: '';
+				position: absolute;
+				inset: 4px;
+				border: 1px solid rgba(201, 169, 97, 0.3);
 				pointer-events: none;
 			}
 
-			.sky::before,
-			.sky::after {
-				content: '';
-				position: absolute;
-				inset: 0;
+			/* Header panel - spans full width */
+			.header-panel {
+				grid-column: 1 / -1;
+				text-align: center;
+				padding: 2rem 1.5rem;
 			}
 
-			.sky::before {
-				background:
-					radial-gradient(circle at 8% 62%, rgba(61, 117, 79, 0.2), transparent 28%),
-					radial-gradient(circle at 92% 34%, rgba(207, 178, 106, 0.16), transparent 24%),
-					radial-gradient(circle at 74% 78%, rgba(151, 194, 164, 0.14), transparent 26%);
-				opacity: 0.9;
+			.panel-decoration {
+				width: 100%;
+				max-width: 300px;
+				height: 40px;
+				margin: 0 auto 1rem;
 			}
 
-			.sky::after {
-				background: linear-gradient(180deg, rgba(4, 8, 4, 0) 0%, rgba(4, 8, 4, 0.22) 100%);
+			.panel-decoration.bottom {
+				margin: 1rem auto 0;
 			}
 
-			.mist {
-				position: absolute;
-				left: -10%;
-				right: -10%;
-				bottom: 12%;
-				height: 26%;
-				background: radial-gradient(ellipse at center, rgba(176, 210, 183, 0.15), transparent 70%);
-				filter: blur(26px);
-				opacity: 0.55;
-			}
-
-			.glow {
-				position: absolute;
-				filter: blur(60px);
-				opacity: 0.5;
-			}
-
-			.g1 {
-				width: 24rem;
-				height: 24rem;
-				left: -4%;
-				top: 4%;
-				background: rgba(207, 178, 106, 0.22);
-			}
-
-			.g2 {
-				width: 28rem;
-				height: 28rem;
-				right: -6%;
-				top: 14%;
-				background: rgba(61, 117, 79, 0.3);
-			}
-
-			.g3 {
-				width: 34rem;
-				height: 20rem;
-				left: 18%;
-				bottom: -2%;
-				background: rgba(20, 50, 33, 0.32);
-			}
-
-			.fireflies {
-				position: absolute;
-				inset: 0;
-				background-image:
-					radial-gradient(2px 2px at 20% 30%, rgba(207, 178, 106, 0.62), transparent),
-					radial-gradient(1.5px 1.5px at 75% 22%, rgba(207, 178, 106, 0.58), transparent),
-					radial-gradient(2px 2px at 64% 60%, rgba(151, 194, 164, 0.45), transparent),
-					radial-gradient(1.8px 1.8px at 40% 76%, rgba(207, 178, 106, 0.52), transparent),
-					radial-gradient(1.5px 1.5px at 88% 70%, rgba(151, 194, 164, 0.42), transparent);
-				opacity: 0.46;
-			}
-
-			.ranger-compass {
-				position: absolute;
-				left: 20%;
-				top: 36%;
-				width: min(58vmin, 32rem);
-				height: min(58vmin, 32rem);
-				transform: translate(-50%, -50%);
-				opacity: 0.18;
-			}
-
-			.compass-ring,
-			.compass-needle {
+			.flourish {
 				fill: none;
-				stroke: rgba(207, 178, 106, 0.65);
+				stroke: var(--gold);
 				stroke-width: 1.2;
 			}
 
-			.compass-ring.inner {
-				stroke: rgba(151, 194, 164, 0.5);
-				stroke-dasharray: 3 10;
+			.dot {
+				fill: var(--gold);
 			}
 
-			.compass-needle {
-				fill: rgba(207, 178, 106, 0.12);
-			}
-
-			.compass-needle.dim {
-				stroke: rgba(151, 194, 164, 0.45);
-				fill: rgba(151, 194, 164, 0.08);
-			}
-
-			.paw-constellation {
-				position: absolute;
-				right: 8%;
-				top: 14%;
-				width: 6.5rem;
-				height: 6.5rem;
-				fill: rgba(207, 178, 106, 0.58);
-				filter: drop-shadow(0 0 10px rgba(207, 178, 106, 0.3));
-				opacity: 0.7;
-			}
-
-			.orbits {
-				position: absolute;
-				left: 78%;
-				top: 58%;
-				width: min(46vmin, 26rem);
-				aspect-ratio: 1;
-				transform: translate(-50%, -50%);
-				opacity: 0.75;
-			}
-
-			.orbits-secondary {
-				left: 10%;
-				top: 70%;
-				width: min(34vmin, 20rem);
-				opacity: 0.45;
-			}
-
-			.ring {
-				position: absolute;
-				inset: 0;
-				border-radius: 999px;
-				border: 1px solid rgba(207, 178, 106, 0.2);
-			}
-
-			.r2 {
-				inset: 11%;
-				border-color: rgba(61, 117, 79, 0.28);
-			}
-
-			.r3 {
-				inset: 22%;
-				border-color: rgba(151, 194, 164, 0.2);
-			}
-
-			.core {
-				position: absolute;
-				left: 50%;
-				top: 50%;
-				width: 1rem;
-				height: 1rem;
-				border-radius: 999px;
-				background: var(--accent);
-				transform: translate(-50%, -50%);
-				box-shadow: 0 0 18px rgba(207, 178, 106, 0.7);
-			}
-
-			.forest-mid {
-				position: absolute;
-				left: 0;
-				bottom: 0;
-				width: 100%;
-				height: 52%;
-				opacity: 0.7;
-			}
-
-			.ridge-back {
-				fill: rgba(17, 39, 25, 0.72);
-			}
-
-			.ridge-front {
-				fill: rgba(11, 27, 17, 0.82);
-			}
-
-			.tree-line {
-				position: absolute;
-				left: 0;
-				bottom: 0;
-				width: 100%;
-				height: 45%;
-				opacity: 0.95;
-			}
-
-			.trees-back {
-				fill: rgba(11, 27, 17, 0.88);
-			}
-
-			.trees-front {
-				fill: rgba(6, 18, 11, 0.98);
-			}
-
-			.sigils {
-				position: absolute;
-				left: 0;
-				bottom: 0;
-				width: 100%;
-				height: 38%;
-				opacity: 0.48;
-			}
-
-			.line {
-				fill: none;
-				stroke: var(--line);
-				stroke-width: 1.4;
-				stroke-linecap: round;
-				stroke-dasharray: 8 14;
-			}
-
-			.l2 {
-				stroke: rgba(61, 117, 79, 0.32);
-			}
-
-			.hero-copy {
-				position: relative;
-				z-index: 3;
-				text-align: center;
-				padding: 0.5rem 0.9rem;
-				max-width: 28rem;
-			}
-
-			.eyebrow {
+			.manuscript-title {
 				margin: 0;
+				display: flex;
+				flex-direction: column;
+				gap: 0.5rem;
+			}
+
+			.title-line {
+				display: block;
+			}
+
+			.title-line.gaelic {
 				font-family: 'Cinzel', serif;
-				font-size: 0.86rem;
-				letter-spacing: 0.22em;
+				font-size: clamp(1.2rem, 3vw, 1.8rem);
+				letter-spacing: 0.15em;
 				text-transform: uppercase;
-				color: var(--muted);
+				color: var(--ink-medium);
+				font-weight: 700;
 			}
 
-			h1 {
-				margin: 0.8rem 0 1rem;
+			.title-line.english {
 				font-family: 'Cinzel', serif;
-				font-size: clamp(2.1rem, 6.4vw, 4.2rem);
-				line-height: 1.08;
-				text-shadow: 0 0 20px rgba(94, 148, 106, 0.22);
+				font-size: clamp(2rem, 5vw, 3.5rem);
+				font-weight: 900;
+				color: var(--ink-dark);
+				letter-spacing: 0.05em;
 			}
 
-			.lead {
-				margin: 0;
-				font-size: clamp(1rem, 2vw, 1.2rem);
-				line-height: 1.25;
-				color: var(--muted);
-			}
-
-			.hero-link {
-				display: inline-flex;
+			/* Compass panel */
+			.compass-panel {
+				display: flex;
+				flex-direction: column;
 				align-items: center;
 				justify-content: center;
-				text-decoration: none;
-				padding: 0.56rem 1rem;
-				border-radius: 999px;
-				font-family: 'Cinzel', serif;
-				font-weight: 600;
-				font-size: 0.68rem;
-				letter-spacing: 0.1em;
-				text-transform: uppercase;
-				border: 1px solid rgba(207, 178, 106, 0.44);
-				background: rgba(255, 255, 255, 0.03);
-				margin-top: 0.9rem;
+				gap: 1rem;
 			}
 
-			@media (max-width: 48rem) {
-				.hero-copy {
-					padding-inline: 0.8rem;
-					max-width: 22rem;
+			.cartographer-compass {
+				width: 100%;
+				max-width: 200px;
+				height: auto;
+			}
+
+			.compass-circle {
+				fill: none;
+				stroke: var(--ink-medium);
+			}
+
+			.compass-circle.outer {
+				stroke-width: 2;
+			}
+
+			.compass-circle.mid {
+				stroke-width: 1.5;
+				stroke-dasharray: 5 5;
+			}
+
+			.compass-circle.inner {
+				stroke-width: 1;
+			}
+
+			.direction-label {
+				font-family: 'Cinzel', serif;
+				font-size: 20px;
+				font-weight: 700;
+				fill: var(--ink-dark);
+				text-anchor: middle;
+			}
+
+			.compass-rose {
+				fill: var(--gold);
+				stroke: var(--ink-dark);
+				stroke-width: 1;
+			}
+
+			.compass-center {
+				fill: var(--ink-dark);
+			}
+
+			/* Text panel */
+			.text-panel {
+				grid-column: 2;
+				grid-row: 2 / 4;
+				display: flex;
+				flex-direction: column;
+				gap: 1rem;
+			}
+
+			.illuminated-letter {
+				font-family: 'Cinzel', serif;
+				font-size: 4rem;
+				line-height: 1;
+				font-weight: 900;
+				color: var(--gold);
+				text-shadow: 2px 2px 0 var(--ink-dark);
+				float: left;
+				margin-right: 0.5rem;
+				margin-top: -0.2rem;
+			}
+
+			.manuscript-text {
+				font-size: 1.1rem;
+				line-height: 1.6;
+				margin: 0;
+				text-align: justify;
+				hyphens: auto;
+			}
+
+			.manuscript-text.secondary {
+				font-size: 1rem;
+				color: var(--ink-medium);
+				font-style: italic;
+			}
+
+			.text-divider {
+				width: 100%;
+				margin: 1rem 0;
+			}
+
+			.text-divider svg {
+				width: 100%;
+				height: 20px;
+			}
+
+			.divider-line {
+				stroke: var(--sepia);
+				stroke-width: 1;
+			}
+
+			.divider-dot {
+				fill: var(--sepia);
+			}
+
+			/* Knotwork panel */
+			.knotwork-panel {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				gap: 1rem;
+			}
+
+			.celtic-knot {
+				width: 100%;
+				max-width: 160px;
+				height: auto;
+			}
+
+			.knot-path {
+				fill: none;
+				stroke: var(--gold);
+				stroke-width: 2.5;
+			}
+
+			.knot-weave {
+				fill: none;
+				stroke: var(--ink-medium);
+				stroke-width: 1.5;
+				stroke-dasharray: 8 4;
+			}
+
+			.knot-node {
+				fill: var(--ink-dark);
+				stroke: var(--gold);
+				stroke-width: 1;
+			}
+
+			/* Specimen panel */
+			.specimen-panel {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 0.5rem;
+			}
+
+			.specimen-drawing {
+				width: 100%;
+				max-width: 180px;
+				height: auto;
+			}
+
+			.stem {
+				fill: none;
+				stroke: var(--ink-medium);
+				stroke-width: 2;
+			}
+
+			.leaf {
+				fill: rgba(109, 86, 71, 0.2);
+				stroke: var(--ink-medium);
+				stroke-width: 1.5;
+			}
+
+			.flower {
+				fill: none;
+				stroke: var(--gold);
+				stroke-width: 2;
+			}
+
+			.flower-center {
+				fill: var(--gold);
+			}
+
+			.specimen-label {
+				margin: 0;
+				font-family: 'Cinzel', serif;
+				font-size: 0.9rem;
+				font-weight: 600;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+			}
+
+			.specimen-note {
+				margin: 0;
+				font-size: 0.85rem;
+				font-style: italic;
+				color: var(--ink-light);
+			}
+
+			/* Archive panel */
+			.archive-panel {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				gap: 1rem;
+			}
+
+			.archive-seal {
+				width: 100%;
+				max-width: 120px;
+				height: auto;
+			}
+
+			.seal-ring {
+				fill: none;
+				stroke: var(--gold);
+				stroke-width: 2;
+			}
+
+			.seal-ring.inner {
+				stroke-width: 1.5;
+				stroke-dasharray: 3 3;
+			}
+
+			.seal-mark {
+				fill: var(--gold);
+				stroke: var(--ink-dark);
+				stroke-width: 1.5;
+			}
+
+			.seal-text {
+				font-family: 'Cinzel', serif;
+				font-size: 12px;
+				font-weight: 700;
+				fill: var(--ink-dark);
+				text-anchor: middle;
+			}
+
+			.archive-link {
+				display: inline-flex;
+				align-items: center;
+				gap: 0.5rem;
+				text-decoration: none;
+				padding: 0.75rem 1.25rem;
+				border: 2px solid var(--border-color);
+				background: rgba(201, 169, 97, 0.1);
+				font-family: 'Cinzel', serif;
+				font-weight: 600;
+				font-size: 0.9rem;
+				letter-spacing: 0.08em;
+				text-transform: uppercase;
+				transition: all 0.2s;
+			}
+
+			.archive-link:hover {
+				background: rgba(201, 169, 97, 0.2);
+				border-color: var(--gold);
+			}
+
+			.link-arrow {
+				width: 20px;
+				height: 20px;
+			}
+
+			.link-arrow path {
+				fill: none;
+				stroke: currentColor;
+				stroke-width: 2;
+				stroke-linecap: round;
+				stroke-linejoin: round;
+			}
+
+			/* Map panel */
+			.map-panel {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 1rem;
+			}
+
+			.map-fragment {
+				width: 100%;
+				max-width: 160px;
+				height: auto;
+			}
+
+			.coastline {
+				fill: none;
+				stroke: var(--ink-medium);
+				stroke-width: 2;
+			}
+
+			.landmark {
+				fill: var(--ink-dark);
+			}
+
+			.latitude {
+				stroke: var(--sepia);
+				stroke-width: 0.5;
+				stroke-dasharray: 4 2;
+			}
+
+			.map-label {
+				font-family: 'EB Garamond', serif;
+				font-size: 14px;
+				font-style: italic;
+				fill: var(--ink-medium);
+				text-anchor: middle;
+			}
+
+			.panel-label {
+				margin: 0;
+				font-family: 'EB Garamond', serif;
+				font-size: 0.95rem;
+				font-style: italic;
+				color: var(--ink-medium);
+				text-align: center;
+			}
+
+			/* Responsive layout */
+			@media (max-width: 900px) {
+				.manuscript-grid {
+					grid-template-columns: 1fr 1fr;
+					gap: 1.5rem 1rem;
 				}
 
-				.sigils {
-					height: 42%;
+				.text-panel {
+					grid-column: 1 / -1;
+					grid-row: auto;
+				}
+			}
+
+			@media (max-width: 600px) {
+				.manuscript-page {
+					padding: 1.5rem 1rem;
 				}
 
-				.orbits {
-					left: 82%;
-					top: 62%;
-					width: min(44vmin, 16rem);
+				.manuscript-grid {
+					grid-template-columns: 1fr;
+					gap: 1.5rem;
 				}
 
-				.orbits-secondary {
-					left: 12%;
-					top: 72%;
-					width: min(30vmin, 10.5rem);
+				.corner-ornament {
+					width: 60px;
+					height: 60px;
 				}
 
-				.paw-constellation {
-					right: 6%;
-					top: 12%;
-					width: 4rem;
-					height: 4rem;
+				.top-left,
+				.top-right {
+					top: 1rem;
 				}
 
-				.ranger-compass {
-					left: 16%;
-					top: 34%;
-					width: min(46vmin, 14rem);
-					height: min(46vmin, 14rem);
+				.top-left,
+				.bottom-left {
+					left: 1rem;
+				}
+
+				.top-right,
+				.bottom-right {
+					right: 1rem;
+				}
+
+				.bottom-left,
+				.bottom-right {
+					bottom: 1rem;
+				}
+
+				.text-panel {
+					grid-column: 1;
+				}
+
+				.manuscript-text {
+					font-size: 1rem;
+				}
+
+				.illuminated-letter {
+					font-size: 3rem;
 				}
 			}
 		</style>
