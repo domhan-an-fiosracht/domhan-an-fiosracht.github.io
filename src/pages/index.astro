@@ -1,0 +1,424 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Domhan an Fiosracht — World of Curiosity</title>
+		<meta name="description" content="Domhan an Fiosracht is a world of curiosity, language, and quiet AI experiments at the edge of wonder." />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet" />
+	</head>
+	<body>
+		<main class="hero-page">
+			<div class="sky" aria-hidden="true">
+				<div class="mist"></div>
+				<div class="glow g1"></div>
+				<div class="glow g2"></div>
+				<div class="glow g3"></div>
+				<div class="fireflies"></div>
+				<svg class="ranger-compass" viewBox="0 0 200 200">
+					<circle class="compass-ring outer" cx="100" cy="100" r="82" />
+					<circle class="compass-ring inner" cx="100" cy="100" r="58" />
+					<path class="compass-needle" d="M100 28 L113 100 L100 172 L87 100 Z" />
+					<path class="compass-needle dim" d="M28 100 L100 87 L172 100 L100 113 Z" />
+				</svg>
+				<svg class="paw-constellation" viewBox="0 0 140 140">
+					<circle cx="70" cy="85" r="14" />
+					<circle cx="48" cy="53" r="8" />
+					<circle cx="66" cy="44" r="8" />
+					<circle cx="86" cy="46" r="8" />
+					<circle cx="103" cy="58" r="8" />
+				</svg>
+				<div class="orbits">
+					<span class="ring r1"></span>
+					<span class="ring r2"></span>
+					<span class="ring r3"></span>
+					<span class="core"></span>
+				</div>
+				<div class="orbits orbits-secondary">
+					<span class="ring r1"></span>
+					<span class="ring r2"></span>
+					<span class="ring r3"></span>
+					<span class="core"></span>
+				</div>
+				<svg class="forest-mid" viewBox="0 0 1200 260" preserveAspectRatio="none">
+					<path class="ridge-back" d="M0,260 L0,220 L70,190 L136,214 L204,176 L272,222 L336,186 L404,228 L468,190 L536,236 L604,178 L668,232 L736,184 L800,228 L866,182 L932,238 L996,190 L1062,230 L1128,188 L1200,218 L1200,260 Z" />
+					<path class="ridge-front" d="M0,260 L0,236 L64,212 L126,236 L188,198 L252,240 L314,206 L378,246 L442,204 L508,250 L572,199 L634,248 L696,206 L760,250 L824,204 L890,248 L954,206 L1018,248 L1082,208 L1146,242 L1200,226 L1200,260 Z" />
+				</svg>
+				<svg class="tree-line" viewBox="0 0 1200 220" preserveAspectRatio="none">
+					<path class="trees-back" d="M0,220 L0,164 L60,176 L95,140 L138,168 L186,132 L228,175 L260,150 L300,184 L348,142 L396,177 L436,132 L485,182 L526,149 L572,186 L615,137 L662,174 L705,128 L748,181 L793,146 L836,186 L884,134 L928,176 L972,144 L1016,186 L1064,138 L1106,174 L1150,148 L1200,176 L1200,220 Z" />
+					<path class="trees-front" d="M0,220 L0,188 L42,168 L78,192 L128,154 L170,192 L220,152 L266,196 L320,158 L362,194 L410,148 L458,198 L508,158 L552,196 L602,150 L648,194 L700,148 L742,198 L790,156 L840,197 L886,152 L934,192 L978,154 L1022,198 L1068,160 L1116,196 L1168,162 L1200,174 L1200,220 Z" />
+				</svg>
+				<svg class="sigils" viewBox="0 0 1200 200" preserveAspectRatio="none">
+					<path class="line l1" d="M0,130 Q180,70 380,120 T760,110 T1200,130" />
+					<path class="line l2" d="M0,150 Q220,190 420,140 T800,150 T1200,135" />
+				</svg>
+			</div>
+
+			<header class="hero-copy">
+				<p class="eyebrow">Domhan an Fiosracht</p>
+				<h1>World of Curiosity</h1>
+				<p class="lead">A ranger's watch between ancient pines.</p>
+				<a class="hero-link" href="https://github.com/domhan-an-fiosracht" target="_blank" rel="noopener">Enter the Archive</a>
+			</header>
+		</main>
+
+		<style>
+			*,
+			*::before,
+			*::after {
+				box-sizing: border-box;
+			}
+
+			:root {
+				--bg: #050b07;
+				--text: #e6f3e7;
+				--muted: #a6c0aa;
+				--accent: #cfb26a;
+				--accent-2: #3d754f;
+				--line: rgba(114, 168, 129, 0.26);
+			}
+
+			html,
+			body {
+				margin: 0;
+				padding: 0;
+				height: 100%;
+				background:
+					radial-gradient(circle at 20% 14%, rgba(207, 178, 106, 0.09), transparent 42%),
+					radial-gradient(circle at 85% 15%, rgba(61, 117, 79, 0.2), transparent 45%),
+					linear-gradient(180deg, #08130d 0%, #050b07 55%, #040804 100%),
+					var(--bg);
+				color: var(--text);
+				font-family: 'Cormorant Garamond', Georgia, serif;
+				overflow: hidden;
+			}
+
+			a {
+				color: inherit;
+			}
+
+			.hero-page {
+				position: relative;
+				height: 100%;
+				width: 100%;
+				display: grid;
+				place-items: center;
+			}
+
+			.sky {
+				position: absolute;
+				inset: 0;
+				pointer-events: none;
+			}
+
+			.sky::before,
+			.sky::after {
+				content: '';
+				position: absolute;
+				inset: 0;
+			}
+
+			.sky::before {
+				background:
+					radial-gradient(circle at 8% 62%, rgba(61, 117, 79, 0.2), transparent 28%),
+					radial-gradient(circle at 92% 34%, rgba(207, 178, 106, 0.16), transparent 24%),
+					radial-gradient(circle at 74% 78%, rgba(151, 194, 164, 0.14), transparent 26%);
+				opacity: 0.9;
+			}
+
+			.sky::after {
+				background: linear-gradient(180deg, rgba(4, 8, 4, 0) 0%, rgba(4, 8, 4, 0.22) 100%);
+			}
+
+			.mist {
+				position: absolute;
+				left: -10%;
+				right: -10%;
+				bottom: 12%;
+				height: 26%;
+				background: radial-gradient(ellipse at center, rgba(176, 210, 183, 0.15), transparent 70%);
+				filter: blur(26px);
+				opacity: 0.55;
+			}
+
+			.glow {
+				position: absolute;
+				filter: blur(60px);
+				opacity: 0.5;
+			}
+
+			.g1 {
+				width: 24rem;
+				height: 24rem;
+				left: -4%;
+				top: 4%;
+				background: rgba(207, 178, 106, 0.22);
+			}
+
+			.g2 {
+				width: 28rem;
+				height: 28rem;
+				right: -6%;
+				top: 14%;
+				background: rgba(61, 117, 79, 0.3);
+			}
+
+			.g3 {
+				width: 34rem;
+				height: 20rem;
+				left: 18%;
+				bottom: -2%;
+				background: rgba(20, 50, 33, 0.32);
+			}
+
+			.fireflies {
+				position: absolute;
+				inset: 0;
+				background-image:
+					radial-gradient(2px 2px at 20% 30%, rgba(207, 178, 106, 0.62), transparent),
+					radial-gradient(1.5px 1.5px at 75% 22%, rgba(207, 178, 106, 0.58), transparent),
+					radial-gradient(2px 2px at 64% 60%, rgba(151, 194, 164, 0.45), transparent),
+					radial-gradient(1.8px 1.8px at 40% 76%, rgba(207, 178, 106, 0.52), transparent),
+					radial-gradient(1.5px 1.5px at 88% 70%, rgba(151, 194, 164, 0.42), transparent);
+				opacity: 0.46;
+			}
+
+			.ranger-compass {
+				position: absolute;
+				left: 20%;
+				top: 36%;
+				width: min(58vmin, 32rem);
+				height: min(58vmin, 32rem);
+				transform: translate(-50%, -50%);
+				opacity: 0.18;
+			}
+
+			.compass-ring,
+			.compass-needle {
+				fill: none;
+				stroke: rgba(207, 178, 106, 0.65);
+				stroke-width: 1.2;
+			}
+
+			.compass-ring.inner {
+				stroke: rgba(151, 194, 164, 0.5);
+				stroke-dasharray: 3 10;
+			}
+
+			.compass-needle {
+				fill: rgba(207, 178, 106, 0.12);
+			}
+
+			.compass-needle.dim {
+				stroke: rgba(151, 194, 164, 0.45);
+				fill: rgba(151, 194, 164, 0.08);
+			}
+
+			.paw-constellation {
+				position: absolute;
+				right: 8%;
+				top: 14%;
+				width: 6.5rem;
+				height: 6.5rem;
+				fill: rgba(207, 178, 106, 0.58);
+				filter: drop-shadow(0 0 10px rgba(207, 178, 106, 0.3));
+				opacity: 0.7;
+			}
+
+			.orbits {
+				position: absolute;
+				left: 78%;
+				top: 58%;
+				width: min(46vmin, 26rem);
+				aspect-ratio: 1;
+				transform: translate(-50%, -50%);
+				opacity: 0.75;
+			}
+
+			.orbits-secondary {
+				left: 10%;
+				top: 70%;
+				width: min(34vmin, 20rem);
+				opacity: 0.45;
+			}
+
+			.ring {
+				position: absolute;
+				inset: 0;
+				border-radius: 999px;
+				border: 1px solid rgba(207, 178, 106, 0.2);
+			}
+
+			.r2 {
+				inset: 11%;
+				border-color: rgba(61, 117, 79, 0.28);
+			}
+
+			.r3 {
+				inset: 22%;
+				border-color: rgba(151, 194, 164, 0.2);
+			}
+
+			.core {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				width: 1rem;
+				height: 1rem;
+				border-radius: 999px;
+				background: var(--accent);
+				transform: translate(-50%, -50%);
+				box-shadow: 0 0 18px rgba(207, 178, 106, 0.7);
+			}
+
+			.forest-mid {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				height: 52%;
+				opacity: 0.7;
+			}
+
+			.ridge-back {
+				fill: rgba(17, 39, 25, 0.72);
+			}
+
+			.ridge-front {
+				fill: rgba(11, 27, 17, 0.82);
+			}
+
+			.tree-line {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				height: 45%;
+				opacity: 0.95;
+			}
+
+			.trees-back {
+				fill: rgba(11, 27, 17, 0.88);
+			}
+
+			.trees-front {
+				fill: rgba(6, 18, 11, 0.98);
+			}
+
+			.sigils {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				height: 38%;
+				opacity: 0.48;
+			}
+
+			.line {
+				fill: none;
+				stroke: var(--line);
+				stroke-width: 1.4;
+				stroke-linecap: round;
+				stroke-dasharray: 8 14;
+			}
+
+			.l2 {
+				stroke: rgba(61, 117, 79, 0.32);
+			}
+
+			.hero-copy {
+				position: relative;
+				z-index: 3;
+				text-align: center;
+				padding: 0.5rem 0.9rem;
+				max-width: 28rem;
+			}
+
+			.eyebrow {
+				margin: 0;
+				font-family: 'Cinzel', serif;
+				font-size: 0.86rem;
+				letter-spacing: 0.22em;
+				text-transform: uppercase;
+				color: var(--muted);
+			}
+
+			h1 {
+				margin: 0.8rem 0 1rem;
+				font-family: 'Cinzel', serif;
+				font-size: clamp(2.1rem, 6.4vw, 4.2rem);
+				line-height: 1.08;
+				text-shadow: 0 0 20px rgba(94, 148, 106, 0.22);
+			}
+
+			.lead {
+				margin: 0;
+				font-size: clamp(1rem, 2vw, 1.2rem);
+				line-height: 1.25;
+				color: var(--muted);
+			}
+
+			.hero-link {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				text-decoration: none;
+				padding: 0.56rem 1rem;
+				border-radius: 999px;
+				font-family: 'Cinzel', serif;
+				font-weight: 600;
+				font-size: 0.68rem;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				border: 1px solid rgba(207, 178, 106, 0.44);
+				background: rgba(255, 255, 255, 0.03);
+				margin-top: 0.9rem;
+			}
+
+			@media (max-width: 48rem) {
+				.hero-copy {
+					padding-inline: 0.8rem;
+					max-width: 22rem;
+				}
+
+				.sigils {
+					height: 42%;
+				}
+
+				.orbits {
+					left: 82%;
+					top: 62%;
+					width: min(44vmin, 16rem);
+				}
+
+				.orbits-secondary {
+					left: 12%;
+					top: 72%;
+					width: min(30vmin, 10.5rem);
+				}
+
+				.paw-constellation {
+					right: 6%;
+					top: 12%;
+					width: 4rem;
+					height: 4rem;
+				}
+
+				.ranger-compass {
+					left: 16%;
+					top: 34%;
+					width: min(46vmin, 14rem);
+					height: min(46vmin, 14rem);
+				}
+			}
+		</style>
+	</body>
+</html>
