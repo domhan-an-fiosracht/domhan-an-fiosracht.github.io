@@ -1,7 +1,7 @@
 {
-  "name": "site",
+  "name": "@domhan-an-fiosracht/domhan-an-fiosracht.github.io",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "node": ">=22.12.0"
   },
@@ -12,9 +12,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^6.0.8"
+    "astro": "^6.1.4"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.8"
+    "@biomejs/biome": "2.4.10"
   }
 }
